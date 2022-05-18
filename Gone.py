@@ -76,7 +76,7 @@ def sendEmail(to,content):
     server=smtplib.SMTP('smtp.gmail.com', 587)
     server.ehlo()
     server.starttls()
-    server.login('194530316073@asoit.edu.in', 'raj_vraj')
+    server.login('enter yourgmail.com', 'your pass')
     server.sendmail('your email id', to, content)
     server.close()
 
@@ -180,7 +180,7 @@ class MainThread(QThread):
                 try:
                     speak("what should i say?")
                     content=self.takeCommand().lower()
-                    to="vrajypatel2003@gmail.com"
+                    to="recevier emaail.com.com"
                     sendEmail(to,content)
                     speak("Email has been sent to avi")
 
